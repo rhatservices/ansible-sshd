@@ -1,5 +1,4 @@
 ---
-
 sshd_port: "22"
 sshd_listen_address: ["::", "0.0.0.0"]
 sshd_protocol: "2"
@@ -28,7 +27,7 @@ sshd_use_privilege_separation: "sandbox"
 sshd_syslog_facility: "AUTH"
 sshd_log_level: "INFO"
 sshd_login_grace_time: "2m"
-sshd_permit_root_login: "no"
+sshd_permit_root_login: "yes"
 sshd_strict_modes: "yes"
 sshd_pubkey_authentication: "yes"
 sshd_authorized_keys_file: ".ssh/authorized_keys"
@@ -37,7 +36,7 @@ sshd_host_based_authentication: "no"
 sshd_ignore_user_known_hosts: "no"
 sshd_permit_empty_passwords: "no"
 sshd_challenge_response_authentication: "no"
-sshd_password_authentication: "no"
+sshd_password_authentication: "yes"
 sshd_gss_api_authentication: "yes"
 sshd_gss_api_cleanup_credentials: "no"
 sshd_x11_forwarding: "yes"
